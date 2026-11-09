@@ -1,0 +1,129 @@
+GeoNames postal candidates
+https://www.geonames.org/
+https://download.geonames.org/export/zip/US.zip
+License: Creative Commons Attribution 4.0, https://creativecommons.org/licenses/by/4.0/
+Retrieved: 2026-11-01. Derived fields: ZIP, state code, city, latitude, longitude. Not residential evidence. Coordinates are approximate postal representative points.
+SHA256 of source ZIP: b57ce7036d9e3f8c915d5a29cc11b6c9e241f2f7ab5dade9a1d1b9210fce9990
+Rows: 40979
+
+Readme for GeoNames Postal Code files :
+
+allCountries.zip: all supported countries, for CA,NL and UK only the first part of the codes.
+The full codes for CA are in the CA_full.csv.zip, same for NL and UK.
+<iso countrycode>: country specific subset also included in allCountries.zip
+This work is licensed under a Creative Commons Attribution 4.0 License.
+This means you can use the dump as long as you give credit to geonames (a link on your website to www.geonames.org is ok)
+see https://creativecommons.org/licenses/by/4.0/
+UK (GB_full.csv.zip): Contains Royal Mail data Royal Mail copyright and database right 2022.
+The Data is provided "as is" without warranty or any representation of accuracy, timeliness or completeness.
+
+This readme describes the GeoNames Postal Code dataset.
+The main GeoNames gazetteer data extract is here: http://download.geonames.org/export/dump/
+
+
+Supported countries: about 120 countries are currently supported. New countries area added when the national postal service starts publishing data under a compatible license.
+
+For many countries lat/lng are determined with an algorithm that searches the place names in the main geonames database 
+using administrative divisions and numerical vicinity of the postal codes as factors in the disambiguation of place names. 
+For postal codes and place name for which no corresponding toponym in the main geonames database could be found an average 
+lat/lng of 'neighbouring' postal codes is calculated.
+Please let us know if you find any errors in the data set. Thanks
+
+For Chile we have only the first digits of the full postal codes (for copyright reasons)
+
+For China we have only the first digits of the full postal codes ending with 00
+
+For Ireland we have only the first letters of the full postal codes (for copyright reasons)
+
+For Malta we have only the first letters of the full postal codes (for copyright reasons)
+
+The Argentina data file contains the first 5 positions of the postal code.
+
+For Brazil only major postal codes are available (only the codes ending with -000 and the major code per municipality).
+
+The data format is tab-delimited text in utf8 encoding, with the following fields :
+
+country code      : iso country code, 2 characters
+postal code       : varchar(20)
+place name        : varchar(180)
+admin name1       : 1. order subdivision (state) varchar(100)
+admin code1       : 1. order subdivision (state) varchar(20)
+admin name2       : 2. order subdivision (county/province) varchar(100)
+admin code2       : 2. order subdivision (county/province) varchar(20)
+admin name3       : 3. order subdivision (community) varchar(100)
+admin code3       : 3. order subdivision (community) varchar(20)
+latitude          : estimated latitude (wgs84)
+longitude         : estimated longitude (wgs84)
+accuracy          : accuracy of lat/lng from 1=estimated, 4=geonameid, 6=centroid of addresses or shape
+
+
+NodeCheck 1.5 additional offline references
+Retrieved: 2026-11-02 (Asia/Shanghai).
+ZIP code data from zipcodes.pro (https://zipcodes.pro/download), CC BY 4.0. Includes U.S. Census Bureau data (public domain) and GeoNames (CC BY 4.0).
+Publication snapshot: 2026-10-22. Modified fields: ZIP, state, postal city, centroid, area codes, ZCTA classification. ZIP type is a derived classification, not an official USPS delivery-type guarantee. See zip_LICENSE.txt and zip_SOURCES.csv in the source archive.
+
+U.S. Census Bureau ACS 2020-2024 5-year estimates, table B25003 (Tenure), total occupied housing estimate and margin of error. U.S. government public domain data.
+https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25003.dat
+Extracted 860Z200US ZCTA rows into housing_2024.csv. ZCTA statistical areas approximate postal areas; housing estimates do not identify individual homes.
+
+IP Geolocation by IP2Location.io (https://www.ip2location.io/) and ipwho.is (https://ipwho.is/).
+Map data: © OpenStreetMap contributors, ODbL. https://www.openstreetmap.org/copyright
+
+US ZIP code database (free edition), data release 2026-10-22
+https://zipcodes.pro/download
+========================================================================
+
+LICENCE
+
+  This compilation is licensed under the Creative Commons Attribution 4.0
+  International licence (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+  You may copy, redistribute, modify and build on it, commercially or not,
+  as long as you give credit. Please credit it as:
+
+    ZIP code data from zipcodes.pro (https://zipcodes.pro/download), CC BY 4.0. Includes U.S. Census Bureau data (public domain) and GeoNames (CC BY 4.0).
+
+  On a web page, a link is the credit we ask for:
+
+    ZIP code data from <a href="https://zipcodes.pro/download">zipcodes.pro</a> (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>)
+
+UPSTREAM
+
+  U.S. Census Bureau files are works of the United States government and
+  are in the public domain. GeoNames is licensed CC BY 4.0, and the credit
+  above covers it. NANPA's numbering reports state no licence terms; they
+  are public records of fact, cited here as their source.
+
+  * Census Gazetteer ZCTA file (2024 Gazetteer) - Public domain (U.S. Census Bureau)
+    https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html  retrieved 2026-10-22
+  * Census 2020 ZCTA-to-County relationship file (2020 relationship file) - Public domain (U.S. Census Bureau)
+    https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.html  retrieved 2026-10-22
+  * Census Gazetteer county file (2024 Gazetteer) - Public domain (U.S. Census Bureau)
+    https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html  retrieved 2026-10-22
+  * Census 2020 Gazetteer county file (2020 Gazetteer) - Public domain (U.S. Census Bureau)
+    https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html  retrieved 2026-10-22
+  * Census American Community Survey 5-year estimates (ACS 5-year 2024) - Public domain (U.S. Census Bureau)
+    https://www.census.gov/programs-surveys/acs/data/summary-file.html  retrieved 2026-10-22
+  * GeoNames US postal codes (rolling daily export) - CC BY 4.0
+    https://download.geonames.org/export/zip/  retrieved 2026-10-22
+  * GeoNames postal codes (PR, VI, GU, AS, MP, MH, FM, PW) (rolling daily export) - CC BY 4.0
+    https://download.geonames.org/export/zip/  retrieved 2026-10-22
+  * NANPA NPA (area code) database (file of 2026-10-22) - Public numbering records (NANPA, under FCC contract); no licence terms stated
+    https://nanpa.com/reports/npa-reports  retrieved 2026-10-22
+  * NANPA Central Office Code assignments (all states, utilized) (file of 2026-10-22) - Public numbering records (NANPA, under FCC contract); no licence terms stated
+    https://nanpa.com/reports/co-code-reports/cocodes_assign  retrieved 2026-10-22
+  * Wikidata: local dialing code (P473) of US places (query run at build time; refetched when a month old) - CC0 1.0 (public domain dedication)
+    https://www.wikidata.org/wiki/Property:P473  retrieved 2026-10-22
+
+WHAT THIS DATA IS, AND IS NOT
+
+  A ZIP code is a set of mail routes, not an area. The Census Bureau
+  approximates most of them with ZIP Code Tabulation Areas (ZCTAs); the
+  population and areas here describe the ZCTA. ZIP codes with no ZCTA
+  (PO-box-only, single-organisation and military codes) have those fields
+  EMPTY. Empty means not measured. It never means zero.
+
+  Provided as is, without warranty of any kind.
+
+  ZIP Code is a registered trademark of the United States Postal Service.
+  zipcodes.pro is not affiliated with, endorsed by, or sponsored by the USPS.

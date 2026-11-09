@@ -1,0 +1,58 @@
+US ZIP code database (free edition), data release 2026-10-22
+https://zipcodes.pro/download
+========================================================================
+
+LICENCE
+
+  This compilation is licensed under the Creative Commons Attribution 4.0
+  International licence (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+  You may copy, redistribute, modify and build on it, commercially or not,
+  as long as you give credit. Please credit it as:
+
+    ZIP code data from zipcodes.pro (https://zipcodes.pro/download), CC BY 4.0. Includes U.S. Census Bureau data (public domain) and GeoNames (CC BY 4.0).
+
+  On a web page, a link is the credit we ask for:
+
+    ZIP code data from <a href="https://zipcodes.pro/download">zipcodes.pro</a> (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>)
+
+UPSTREAM
+
+  U.S. Census Bureau files are works of the United States government and
+  are in the public domain. GeoNames is licensed CC BY 4.0, and the credit
+  above covers it. NANPA's numbering reports state no licence terms; they
+  are public records of fact, cited here as their source.
+
+  * Census Gazetteer ZCTA file (2024 Gazetteer) - Public domain (U.S. Census Bureau)
+    https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html  retrieved 2026-10-22
+  * Census 2020 ZCTA-to-County relationship file (2020 relationship file) - Public domain (U.S. Census Bureau)
+    https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.html  retrieved 2026-10-22
+  * Census Gazetteer county file (2024 Gazetteer) - Public domain (U.S. Census Bureau)
+    https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html  retrieved 2026-10-22
+  * Census 2020 Gazetteer county file (2020 Gazetteer) - Public domain (U.S. Census Bureau)
+    https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html  retrieved 2026-10-22
+  * Census American Community Survey 5-year estimates (ACS 5-year 2024) - Public domain (U.S. Census Bureau)
+    https://www.census.gov/programs-surveys/acs/data/summary-file.html  retrieved 2026-10-22
+  * GeoNames US postal codes (rolling daily export) - CC BY 4.0
+    https://download.geonames.org/export/zip/  retrieved 2026-10-22
+  * GeoNames postal codes (PR, VI, GU, AS, MP, MH, FM, PW) (rolling daily export) - CC BY 4.0
+    https://download.geonames.org/export/zip/  retrieved 2026-10-22
+  * NANPA NPA (area code) database (file of 2026-10-22) - Public numbering records (NANPA, under FCC contract); no licence terms stated
+    https://nanpa.com/reports/npa-reports  retrieved 2026-10-22
+  * NANPA Central Office Code assignments (all states, utilized) (file of 2026-10-22) - Public numbering records (NANPA, under FCC contract); no licence terms stated
+    https://nanpa.com/reports/co-code-reports/cocodes_assign  retrieved 2026-10-22
+  * Wikidata: local dialing code (P473) of US places (query run at build time; refetched when a month old) - CC0 1.0 (public domain dedication)
+    https://www.wikidata.org/wiki/Property:P473  retrieved 2026-10-22
+
+WHAT THIS DATA IS, AND IS NOT
+
+  A ZIP code is a set of mail routes, not an area. The Census Bureau
+  approximates most of them with ZIP Code Tabulation Areas (ZCTAs); the
+  population and areas here describe the ZCTA. ZIP codes with no ZCTA
+  (PO-box-only, single-organisation and military codes) have those fields
+  EMPTY. Empty means not measured. It never means zero.
+
+  Provided as is, without warranty of any kind.
+
+  ZIP Code is a registered trademark of the United States Postal Service.
+  zipcodes.pro is not affiliated with, endorsed by, or sponsored by the USPS.

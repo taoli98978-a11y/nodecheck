@@ -1,0 +1,15 @@
+*.exe
+*.o
+*.a
+*.def
+*.dll
+*.zip
+test151
+test152
+test_http
+test-cache/
+__pycache__/
+*.pem
+*.pfx
+*.p12
+.env

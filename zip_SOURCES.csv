@@ -1,0 +1,11 @@
+source,vintage,licence,url,retrieved
+Census Gazetteer ZCTA file,2024 Gazetteer,Public domain (U.S. Census Bureau),https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html,2026-10-22
+Census 2020 ZCTA-to-County relationship file,2020 relationship file,Public domain (U.S. Census Bureau),https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.html,2026-10-22
+Census Gazetteer county file,2024 Gazetteer,Public domain (U.S. Census Bureau),https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html,2026-10-22
+Census 2020 Gazetteer county file,2020 Gazetteer,Public domain (U.S. Census Bureau),https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html,2026-10-22
+Census American Community Survey 5-year estimates,ACS 5-year 2024,Public domain (U.S. Census Bureau),https://www.census.gov/programs-surveys/acs/data/summary-file.html,2026-10-22
+GeoNames US postal codes,rolling daily export,CC BY 4.0,https://download.geonames.org/export/zip/,2026-10-22
+"GeoNames postal codes (PR, VI, GU, AS, MP, MH, FM, PW)",rolling daily export,CC BY 4.0,https://download.geonames.org/export/zip/,2026-10-22
+NANPA NPA (area code) database,file of 2026-10-22,"Public numbering records (NANPA, under FCC contract); no licence terms stated",https://nanpa.com/reports/npa-reports,2026-10-22
+"NANPA Central Office Code assignments (all states, utilized)",file of 2026-10-22,"Public numbering records (NANPA, under FCC contract); no licence terms stated",https://nanpa.com/reports/co-code-reports/cocodes_assign,2026-10-22
+Wikidata: local dialing code (P473) of US places,query run at build time; refetched when a month old,CC0 1.0 (public domain dedication),https://www.wikidata.org/wiki/Property:P473,2026-10-22

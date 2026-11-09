@@ -1,0 +1,7 @@
+1.5.2 验证记录（2026-11-04）
+通过：新旧节点格式、大小写协议、首尾空白、SOCKS5H、HTTP/HTTPS URL、IPv6、URL %XX 解码、+ 原样保留、非法端口及无效编码拒绝、节点复制后重新解析。
+通过：SOCKS5 认证及域名请求报文（ATYP=3）、分片收发、认证拒绝、HTTP CONNECT；1.5 住宅/区号降级及 1.5.1 复制逻辑回归；WinHTTP 模拟错误和重试测试。
+构建：Windows x64 GUI PE，仅导入系统 DLL；保留 lowercase inet_pton。
+限制：没有 Windows 实机/模拟运行，没有使用真实代理账户联网测试。本次测试不证明特定节点当前可用或应用加载正常。
+运行测试：gcc -w -O1 -ffunction-sections -fdata-sections -Wl,--gc-sections test152.c -lm -o test152 && ./test152
+同样运行 test151.c、test_http.c。构建：python3 build.py；打包：python3 release.py。
