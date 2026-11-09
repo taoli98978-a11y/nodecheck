@@ -1,0 +1,37 @@
+name: Build and test Windows GUI
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc binutils
+          python -m pip install Pillow==11.3.0
+      - name: Run core and network tests
+        run: |
+          for test in test151 test152 test_http; do
+            gcc -w -O1 -ffunction-sections -fdata-sections -Wl,--gc-sections "$test.c" -lm -o "$test"
+            ./"$test"
+          done
+      - name: Build native Windows executable
+        run: |
+          python build.py
+          python release.py
+          mkdir -p dist
+          cp ../NodeCheck_1.5.2_Win64.zip dist/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: NodeCheck-1.5.2-Win64-unsigned
+          path: dist/NodeCheck_1.5.2_Win64.zip
